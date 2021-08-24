@@ -1,0 +1,27 @@
+mixin AboutUs
+  +Section.pb-0
+    .row 
+      .col-12.py-3
+        +Background({image: `${CWD}assets/img/gallery/about-us.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
+        h1.text-center ABOUT US
+
+  section.py-5 
+    +Background({image: `${CWD}assets/img/gallery/about-bg.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
+    .container    
+      .row.align-items-center
+        .col-md-6.order-1
+          img.w-100(src=`${CWD}assets/img/gallery/about.png` alt='...')
+        .col-md-6.text-center.text-md-start
+          h2.fw-bold.mb-4 We are developing a healthcare 
+            br
+            | system around you
+          p We think that everyone should have easy access to excellent 
+            br
+            |healthcare. Our aim is to make the procedure as simple as 
+            br
+            |possible for our patients and to offer treatment no matter
+            br
+            |where they are — in person or at their convenience. 
+          .py-3
+            button.btn.btn-lg.btn-outline-primary.rounded-pill(type='submit') Learn more 
+              

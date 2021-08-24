@@ -1,0 +1,52 @@
+append variables
+  -
+    var department= [
+      {
+        image:'neurology.svg',
+        text: 'Neurology',
+      },
+      {
+        image:'eye-care.svg',
+        text: 'Eye care',
+      },
+      {
+        image: 'cardiac.svg',
+        text: 'Cardiac care',
+      },
+      {
+        image: 'heart.svg',
+        text: 'Heart care',
+      },
+      {
+        image: 'osteoporosis.svg',
+        text: 'Osteoporosis',
+      },
+      {
+        image: 'ent.svg',
+        text: 'ENT',
+      },
+      
+    ];
+
+
+mixin Department(config)
+  .col-6.col-lg-2.mb-5
+    .text-center
+      img.mb-3(src=`${CWD}assets/img/icons/${config.image}` alt='...' )
+      p=config.text
+
+mixin Departments
+  +Section.py-5
+    .row 
+      .col-12.py-3
+        +Background({image: `${CWD}assets/img/gallery/bg-departments.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
+        h1.text-center OUR DEPARTMENTS
+  +Section.py-0     
+    .row    
+      +Department(department[0])
+      +Department(department[1])
+      +Department(department[2])
+      +Department(department[3])
+      +Department(department[4])  
+      +Department(department[5])  
+
