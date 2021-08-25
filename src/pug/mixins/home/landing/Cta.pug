@@ -1,17 +1,17 @@
 mixin Cta 
-  +Section.bg-1000
+  +Section.bg-primary
     .row 
       .col-lg-6
-        h2.fw-bold.text-white Get an update every week
-        p.text-300 We ensure that your product is delivered in the safest possible
+        h2.fw-bold.text-light Get an update every week
+        p.text-light Livedoc was created in order to improve the patient experience. 
           br
-          | manner, at the correct location, at the right time.
+          | Providing world-class tests, and a wide range of other services.
       .col-lg-6 
-        h5.text-primary.mb-3 SUBSCRIBE TO NEWSLETTER  
+        h5.text-light.mb-3 SUBSCRIBE TO NEWSLETTER  
         form.row.gx-2.gy-2.align-items-center
           .col
             .input-group-icon
               label.visually-hidden(for='inputEmailCta') Address
-              input.form-control#inputEmailCta.input-box.form-quriar-control.text-light(type='email' placeholder='Enter your mail')
+              input.form-control.form-livedoc-control#inputEmailCta.input-box.form-quriar-control.text-light(type='email' placeholder='Enter your mail')
           .d-grid.gap-3.col-sm-auto
-            button.btn.btn-danger(type='submit') Subscribe
+            button.btn.btn-lg.btn-light.rounded-3.px-4.py-3(type='submit') Subscribe

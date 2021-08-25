@@ -1,11 +1,11 @@
 mixin FooterList(...items)
   each item in items
     li.lh-lg
-      a.text-500(href='#!')
+      a.text-light(href='#!')
         =item
 
 mixin Footer 
-  +Section.py-0.bg-1000
+  +Section.py-0.bg-primary
     .row.justify-content-md-between.justify-content-evenly.py-4
       .col-12.col-sm-8.col-md-6.col-lg-auto.text-center.text-md-start 
         p.fs--1.my-2.fw-bold.text-200 All rights Reserved &copy; Your Company, 2021
@@ -15,16 +15,16 @@ mixin Footer
             path(d='M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z')
 
           |&nbsp;by&nbsp;
-          a(href='https://themewagon.com/' target='_blank').fw-bold.text-primary ThemeWagon 
+          a(href='https://themewagon.com/' target='_blank').fw-bold.text-info ThemeWagon 
 
 mixin PreFooter 
-  +Section.bg-900.pb-0.pt-5
+  +Section(style=" background: rgba(27, 113, 161, 0.8);")
     .row
       .col-12.col-sm-12.col-lg-6.mb-4.order-0.order-sm-0
         a(href='#').text-decoration-none
           img(src=`${CWD}assets/img/gallery/footer-logo.png` height="51" alt='' ) 
 
-        p.text-500.my-4 The most trusted Courier
+        p.text-light.my-4 The most trusted Courier
           br
           |company in your area.
          
