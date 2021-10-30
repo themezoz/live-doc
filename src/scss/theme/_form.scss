@@ -35,6 +35,18 @@
   }
 }
 
+.form-cta-control {
+  border: $input-border-width solid rgba($light, .95);
+  color: $gray-100;
+  background-color: transparent;
+  &:focus {
+    color: $light;
+    font-weight: 700;
+    background-color:  transparent;
+    border: 2px solid rgba($light, .8);
+  }
+}
+
 .form-select{
   border: $input-border-width solid rgba($info, .2);
   @include border-radius(1rem, 0);

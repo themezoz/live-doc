@@ -216,7 +216,7 @@ $body-color: $secondary !default;
 //-----------------------------------------------*/
 // Style anchor elements.
 
-$link-color:                              $gray-100 !default;
+$link-color:                              $gray-400 !default;
 $link-decoration: none !default;
 $link-hover-decoration: none !default;
 $link-hover-color : $primary;
@@ -327,6 +327,16 @@ $form-select-indicator-color:       $gray-400 !default;
 $input-focus-border-color:    rgba($primary, .8) !default;
 
 
+$input-btn-padding-y:         .875rem !default;
+$input-btn-padding-x:         2.5rem !default;
+
+$input-btn-padding-y-sm:      .775rem !default;
+$input-btn-padding-x-sm:      1.5rem !default;
+
+
+$input-btn-padding-y-lg:      .975rem !default;
+$input-btn-padding-x-lg:      3.5rem !default;
+
 
 $input-btn-focus-color:       none !default;
 $input-btn-focus-box-shadow:    none !default;
@@ -347,8 +357,8 @@ $btn-border-radius-lg: 0.35rem !default;
 //|   Navigation
 //-----------------------------------------------*/
 $navbar-font-size: $font-size-base * 0.8 !default;
-$navbar-light-color: rgba($black, 0.90) !default;
-$navbar-light-hover-color: rgba($black, 0.95) !default;
+$navbar-light-color: #738B98 !default;
+$navbar-light-hover-color: rgba($primary, 0.95) !default;
 $navbar-light-active-color: rgba($primary, 0.95)  !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
@@ -434,14 +444,12 @@ $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-color:     $primary !default;
 
 $carousel-indicator-active-bg:       $primary !default;
-$carousel-indicator-width:           6px !default;
-$carousel-indicator-height:          6px !default;
+$carousel-indicator-width:           21px !default;
+$carousel-indicator-height:          12px !default;
 $carousel-indicator-hit-area-height : 0 !default;
 $carousel-control-bg-color: rgba($primary, .3) !important;
 
 $carousel-control-icon-width:        1.8rem !default;
-// $carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
-// $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
 
 // Navs
 $nav-tabs-link-active-color:        $orange !default;

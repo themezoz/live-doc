@@ -19,3 +19,17 @@
     border-bottom-color: $nav-tabs-link-active-color;
   }
 }
+
+// Nav links
+
+.nav-link {
+  color: $info;
+  font-weight: 700;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+    color: $primary;
+  }
+}
+

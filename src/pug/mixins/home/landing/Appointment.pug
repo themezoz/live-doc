@@ -9,10 +9,10 @@ mixin Appointment
     .container  
       .row 
         +Background({image: `${CWD}assets/img/gallery/dot-bg.png`, attrs: { style: { 'background-position': 'bottom right', 'background-size': 'auto',} }, className: 'bg-size' })    
-        +Background({image: `${CWD}assets/img/gallery/appointment-img-bg.png`, attrs: { style: { 'background-position': 'left center', 'background-size': 'contain',} }, className: 'bg-size' })    
-        .col-6.z-index-2
+        +Background({image: `${CWD}assets/img/gallery/appointment-img-bg.png`, attrs: { style: { 'background-position': 'left center', 'background-size': 'contain',} }, className: 'bg-size d-none d-xxl-block' })    
+        .col-lg-6.z-index-2.mb-5
           img.w-100(src=`${CWD}assets/img/gallery/appointment.png` alt='...')
-        .col-6.z-index-2
+        .col-lg-6.z-index-2
           form.row.g-3
             .col-md-6
               label.visually-hidden(for='inputName') Name

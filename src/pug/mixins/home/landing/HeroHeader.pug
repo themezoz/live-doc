@@ -2,9 +2,9 @@ mixin HeroHeader
   section.py-xxl-10.pb-0#home
     +Background({image: `${CWD}assets/img/gallery/hero-bg.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'cover',} }, className: 'bg-size' })
     .container
-      .row
+      .row.min-vh-xl-100.min-vh-xxl-25
         .col-md-5.col-xl-6.col-xxl-7.order-0.order-md-1.text-end
-          img.pt-7.pt-md-0.w-100(src=`${CWD}assets/img/gallery/h.jpg` alt='hero-header')
+          img.pt-7.pt-md-0.w-100(src=`${CWD}assets/img/gallery/hero.png` alt='hero-header')
         .col-md-75.col-xl-6.col-xxl-5.text-md-start.text-center.py-6
           h1.fw-normal.font-base.fs-6.fs-xxl-7 We're 
             strong determined 

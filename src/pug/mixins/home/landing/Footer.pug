@@ -18,28 +18,30 @@ mixin Footer
           a(href='https://themewagon.com/' target='_blank').fw-bold.text-info ThemeWagon 
 
 mixin PreFooter 
-  +Section(style=" background: rgba(27, 113, 161, 0.8);")
-    .row
-      .col-12.col-sm-12.col-lg-6.mb-4.order-0.order-sm-0
-        a(href='#').text-decoration-none
-          img(src=`${CWD}assets/img/gallery/footer-logo.png` height="51" alt='' ) 
+  section.py-0(style=" background: rgba(27, 113, 161, 0.8);")
+    +Background({image: `${CWD}assets/img/gallery/dot-bg.png`, attrs: { style: { 'background-position': 'top left', 'margin-top': '-3.125rem', 'background-size': 'auto',} }, className: 'bg-size' })
+    .container
+      .row.py-8
+        .col-12.col-sm-12.col-lg-6.mb-4.order-0.order-sm-0
+          a(href='#').text-decoration-none
+            img(src=`${CWD}assets/img/gallery/footer-logo.png` height="51" alt='' ) 
 
-        p.text-light.my-4 The most trusted Courier
-          br
-          |company in your area.
-         
-      .col-6.col-sm-4.col-lg-2.mb-3.order-2.order-sm-1
-        h5.lh-lg.fw-bold.mb-4.text-light.font-sans-serif Other links 
-        ul.list-unstyled.mb-md-4.mb-lg-0
-          +FooterList('Blogs','Movers website','Traffic Update')
+          p.text-light.my-4 The world's most trusted 
+            br
+            |telehealth company.
+          
+        .col-6.col-sm-4.col-lg-2.mb-3.order-2.order-sm-1
+          h5.lh-lg.fw-bold.mb-4.text-light.font-sans-serif Departments
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('Eye care','Cardiac are','Heart care')
 
-      .col-6.col-sm-4.col-lg-2.mb-3.order-3.order-sm-2
-        h5.lh-lg.fw-bold.text-light.mb-4.font-sans-serif Services
-        ul.list-unstyled.mb-md-4.mb-lg-0
-          +FooterList('Corporate goods','Artworks','Documents')
-      
-      .col-6.col-sm-4.col-lg-2.mb-3.order-3.order-sm-2
-        h5.lh-lg.fw-bold.text-light.mb-4.font-sans-serif  Customer Care
-        ul.list-unstyled.mb-md-4.mb-lg-0
-          +FooterList('About Us','Contact US','Get Update')
-  +Footer
+        .col-6.col-sm-4.col-lg-2.mb-3.order-3.order-sm-2
+          h5.lh-lg.fw-bold.text-light.mb-4.font-sans-serif Membership
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('Free trial','Silver','Premium')
+        
+        .col-6.col-sm-4.col-lg-2.mb-3.order-3.order-sm-2
+          h5.lh-lg.fw-bold.text-light.mb-4.font-sans-serif  Customer Care
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('About Us','Contact US','Get Update')
+    +Footer
