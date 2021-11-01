@@ -1,16 +1,16 @@
 mixin AboutUs
-  +Section.pb-0
+  +Section.pb-0#about 
     .row 
       .col-12.py-3
         +Background({image: `${CWD}assets/img/gallery/about-us.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
         h1.text-center ABOUT US
 
-  section.py-5 
+  section.py-5   
     +Background({image: `${CWD}assets/img/gallery/about-bg.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
-    .container    
+    .container
       .row.align-items-center
         .col-md-6.order-1
-          img.fit-cover.rounded-circle.w-100(src=`${CWD}assets/img/gallery/health-care.jpg` alt='...')
+          img.fit-cover.rounded-circle.w-100(src=`${CWD}assets/img/gallery/health-care.png` alt='...')
         .col-md-6.text-center.text-md-start
           h2.fw-bold.mb-4 We are developing a healthcare 
             br

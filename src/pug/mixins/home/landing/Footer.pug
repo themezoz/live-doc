@@ -18,7 +18,7 @@ mixin Footer
           a(href='https://themewagon.com/' target='_blank').fw-bold.text-info ThemeWagon 
 
 mixin PreFooter 
-  section.py-0(style=" background: rgba(27, 113, 161, 0.8);")
+  section.py-0.bg-secondary
     +Background({image: `${CWD}assets/img/gallery/dot-bg.png`, attrs: { style: { 'background-position': 'top left', 'margin-top': '-3.125rem', 'background-size': 'auto',} }, className: 'bg-size' })
     .container
       .row.py-8

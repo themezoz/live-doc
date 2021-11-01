@@ -1,35 +1,17 @@
-// Tabs
-//
 
 
-.majestic-tabs {
-  border-bottom:0;
+// // Nav links
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
 
-  .nav-link {
-    border: 2px solid transparent;
-    color:$gray-800;
-    &:hover,
-    &:focus {
-      border-color: transparent;
+      &:hover,
+      &:focus {
+        color: $navbar-light-hover-color;
+        font-weight: 700;
+      }
     }
-  }
 
-  .nav-link.active,
-  .nav-item.show .nav-link {
-    border-bottom-color: $nav-tabs-link-active-color;
   }
 }
-
-// Nav links
-
-.nav-link {
-  color: $info;
-  font-weight: 700;
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-    color: $primary;
-  }
-}
-

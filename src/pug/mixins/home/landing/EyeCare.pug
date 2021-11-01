@@ -1,11 +1,11 @@
 mixin EyeCare
   section.bg-secondary
-    +Background({image: `${CWD}assets/img/gallery/bg-eye-care.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: 'bg-size' })
+    +Background({image: `${CWD}assets/img/gallery/bg-eye-care.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: '' })
     .container
       .row.align-items-center
-        .col-md-6
-          img.rounded-3.w-75(src=`${CWD}assets/img/gallery/eye-care.jpg`   alt='...')
-        .col-md-6.text-center.text-md-start
+        .col-md-5.col-xxl-6
+          img.img-fluid(src=`${CWD}assets/img/gallery/eye-care.png`   alt='...')
+        .col-md-7.col-xxl-6.text-center.text-md-start
           h2.fw-bold.text-light.mb-4 Eye Care with Top Professionals
             br
             | and In Budget.
