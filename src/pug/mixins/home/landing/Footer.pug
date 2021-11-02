@@ -1,7 +1,7 @@
 mixin FooterList(...items)
   each item in items
     li.lh-lg
-      a.text-light(href='#!')
+      a.footer-link(href='#!')
         =item
 
 mixin Footer 
@@ -19,7 +19,7 @@ mixin Footer
 
 mixin PreFooter 
   section.py-0.bg-secondary
-    +Background({image: `${CWD}assets/img/gallery/dot-bg.png`, attrs: { style: { 'background-position': 'top left', 'margin-top': '-3.125rem', 'background-size': 'auto',} }, className: 'bg-size' })
+    +Background({image: `${CWD}assets/img/gallery/dot-bg.png`, attrs: { style: { 'background-position': 'top left', 'margin-top': '-3.125rem', 'background-size': 'auto',} }, className: 'opacity-25' })
     .container
       .row.py-8
         .col-12.col-sm-12.col-lg-6.mb-4.order-0.order-sm-0

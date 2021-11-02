@@ -17449,7 +17449,7 @@ label,
 .pagination,
 .valid-feedback,
 .invalid-feedback {
-  font-family: "Fjalla One", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 pre {
@@ -17529,11 +17529,8 @@ ul {
   text-align: justify !important;
 }
 
-.text-gradient {
-  background: -o-linear-gradient(-40deg, #fb3c00, #ffb800);
-  background: linear-gradient(-50deg, #fb3c00, #ffb800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-soft-primary {
+  color: #B2DDED;
 }
 
 /*-----------------------------------------------
@@ -18315,6 +18312,15 @@ ul {
   }
 }
 
+.footer-link {
+  color: #B2DDED;
+}
+
+.footer-link:hover {
+  color: #FFFEFE;
+  text-decoration: none;
+}
+
 .carousel-indicators li {
   border-radius: 50%;
   border-radius: 10px;
@@ -18427,7 +18433,7 @@ ul {
 
 .form-cta-control {
   border: 1px solid rgba(240, 244, 249, 0.95);
-  color: #EBEBF5;
+  color: #B2DDED;
   background-color: transparent;
 }
 
@@ -18445,7 +18451,7 @@ ul {
   border-radius: 1.25rem;
   padding: .95rem .95rem;
   background-color: transparent;
-  color: #9291A1;
+  color: #7B7A8B;
 }
 
 .form-select:focus {

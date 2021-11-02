@@ -36,22 +36,22 @@ append variables
 
 
 mixin Department(config)
-  .col-6.col-lg.mb-5
+  .col-auto.col-md-4.col-lg-auto.text-xl-start
     .d-flex.flex-column.align-items-center
       .icon-box.text-center
         a.text-decoration-none(href="#!")
           img.mb-3.deparment-icon(src=`${CWD}assets/img/icons/${config.image}` alt='...' )  
           img.mb-3.deparment-icon-hover(src=`${CWD}assets/img/icons/${config.hoverImage}` alt='...' )
-          p.text-center=config.text
+          p.fs-1.fs-xxl-2.text-center=config.text
 
 mixin Departments
   +Section.py-5#departments
-    .row 
+    .row
       .col-12.py-3
         +Background({image: `${CWD}assets/img/gallery/bg-departments.png`, attrs: { style: { 'background-position': 'top center', 'background-size': 'contain',} }, className: 'bg-size' })
         h1.text-center OUR DEPARTMENTS
   +Section.py-0     
-    .row    
+    .row.py-5.align-items-center.justify-content-center.justify-content-lg-evenly  
       +Department(department[0])
       +Department(department[1])
       +Department(department[2])

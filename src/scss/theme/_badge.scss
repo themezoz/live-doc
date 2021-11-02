@@ -30,4 +30,10 @@
   }
 }
 
-
+.footer-link{
+  color: #B2DDED;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+  }
+}

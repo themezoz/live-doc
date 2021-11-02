@@ -1,11 +1,11 @@
 mixin PeopleWhoLoves(config)
-  .col-3.text-center
+  .col-sm-3.text-center
     img(src=`${CWD}assets/img/gallery/${config.userImage}` width="100" alt='')
     h5.mt-3.fw-medium.text-secondary=config.name
     p.fw-normal.mb-0=config.designation
-  .col-9
+  .col-sm-9.text-center.text-sm-start.pt-3.pt-sm-0
     h2=config.title
-    .my-3
+    .my-2
       i.fas.fa-star.me-2
       i.fas.fa-star.me-2
       i.fas.fa-star.me-2
@@ -22,7 +22,7 @@ mixin People
   section.py-8
     +Background({image: `${CWD}assets/img/gallery/people-bg-1.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: 'bg-size' })
     .container 
-      .row.align-items-center.offset-1   
+      .row.align-items-center.offset-sm-1   
         #carouselPeople.carousel.slide(data-bs-ride='carousel')
           .carousel-inner
             .carousel-item.active(data-bs-interval='10000')

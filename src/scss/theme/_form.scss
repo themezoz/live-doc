@@ -20,6 +20,7 @@
   font-weight: 300;
   background-color: $white;
   padding: .95rem .95rem;
+
   &:focus {
     color: $gray-800;
     font-weight: 700;
@@ -37,7 +38,7 @@
 
 .form-cta-control {
   border: $input-border-width solid rgba($light, .95);
-  color: $gray-100;
+  color: #B2DDED;
   background-color: transparent;
   &:focus {
     color: $light;
@@ -54,7 +55,7 @@
   border-radius: 1.25rem;
   padding: .95rem .95rem;
   background-color: transparent;
-  color: $gray-500;
+  color: $gray-600;
   &:focus {
     color: $gray-800;
     font-weight: 700;
